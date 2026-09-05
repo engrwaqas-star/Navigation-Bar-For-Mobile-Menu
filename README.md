@@ -1,2 +1,3 @@
-# Javascript-learning-by-waqas
-waqas is learning javascrpit from chai aur code and practicing it on github 
+# Navigation-Bar-For-Mobile-Menu
+
+waqas is learning web development from chai aur code and practicing it on github 
