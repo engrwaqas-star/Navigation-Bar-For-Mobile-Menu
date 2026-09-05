@@ -1,0 +1,294 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--ink: #1f2924;
+	--cream: #fffaf0;
+	--accent: #d86b3f;
+	--line: #e8dfd1;
+	--sans: Arial, sans-serif;
+}
+
+body {
+	background: var(--cream);
+	color: var(--ink);
+	font-family: Georgia, serif;
+	line-height: 1.6;
+}
+
+section {
+	scroll-margin-top: 2rem;
+}
+
+.navbar,
+.hero,
+.section {
+	margin: 0 auto;
+	max-width: 1180px;
+}
+
+.navbar {
+	align-items: center;
+	border-bottom: 1px solid var(--line);
+	display: flex;
+	justify-content: space-between;
+	padding: 1.25rem 2rem;
+}
+
+.logo {
+	color: var(--ink);
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logo span,
+.hero p,
+.hero h1 em,
+.section-heading p,
+.eyebrow,
+.price {
+	color: var(--accent);
+}
+
+.nav-links {
+	align-items: center;
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+}
+
+.nav-links a {
+	color: var(--ink);
+	font-size: .95rem;
+	text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+	color: var(--accent);
+}
+
+.reserve-button {
+	background: var(--accent);
+	border-radius: 999px;
+	color: white !important;
+	padding: .7rem 1.15rem;
+}
+
+.menu-button {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	display: none;
+	font-size: 1.7rem;
+	line-height: 1;
+}
+
+.hero {
+	padding: 7rem 2rem;
+}
+
+.hero p,
+.section-heading p,
+.eyebrow {
+	font-family: var(--sans);
+	font-size: .75rem;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+}
+
+.hero h1 {
+	font-size: clamp(3rem, 8vw, 6.5rem);
+	font-weight: normal;
+	line-height: .95;
+	margin-top: 1rem;
+	max-width: 760px;
+}
+
+.section {
+	border-top: 1px solid var(--line);
+	padding: 5rem 2rem;
+}
+
+.section-heading {
+	align-items: end;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.section h2 {
+	font-size: clamp(2.2rem, 5vw, 4rem);
+	font-weight: normal;
+	line-height: 1;
+}
+
+.menu-grid,
+.info-grid,
+.review-grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item,
+.info-card,
+.review {
+	border: 1px solid var(--line);
+	padding: 1.5rem;
+}
+
+.menu-item {
+	min-height: 190px;
+}
+
+.menu-item h3,
+.info-card h3 {
+	font-size: 1.25rem;
+	font-weight: normal;
+	margin-bottom: .5rem;
+}
+
+.menu-item p,
+.info-card p,
+.review p,
+.story-copy {
+	color: #59615b;
+	font-family: var(--sans);
+	font-size: .95rem;
+}
+
+.price {
+	display: block;
+	font-family: var(--sans);
+	font-size: .85rem;
+	margin-top: 1.25rem;
+}
+
+.story-layout,
+.reserve-layout {
+	align-items: start;
+	display: grid;
+	gap: 4rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.story-copy {
+	font-size: 1.15rem;
+	line-height: 1.8;
+}
+
+.review strong {
+	display: block;
+	font-family: var(--sans);
+	font-size: .8rem;
+	letter-spacing: .08em;
+	margin-top: 1rem;
+	text-transform: uppercase;
+}
+
+.reserve-box {
+	background: var(--ink);
+	color: var(--cream);
+	max-width: 480px;
+	padding: 2rem;
+}
+
+.reserve-box p {
+	color: #d9ddd5;
+	font-family: var(--sans);
+	font-size: .95rem;
+	margin: .75rem 0 1.5rem;
+}
+
+.reserve-link {
+	border-bottom: 1px solid var(--accent);
+	color: var(--cream);
+	font-family: var(--sans);
+	text-decoration: none;
+}
+
+footer {
+	border-top: 1px solid var(--line);
+	color: #59615b;
+	font-family: var(--sans);
+	font-size: .8rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+@media (max-width: 700px) {
+	.navbar {
+		padding: 1rem 1.25rem;
+		position: relative;
+	}
+
+	.menu-button {
+		display: block;
+	}
+
+	.nav-links {
+		background: var(--cream);
+		border-bottom: 1px solid var(--line);
+		display: none;
+		flex-direction: column;
+		gap: 0;
+		left: 0;
+		padding: .75rem 1.25rem 1.25rem;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.nav-links.open {
+		display: flex;
+	}
+
+	.nav-links li,
+	.nav-links a {
+		display: block;
+		width: 100%;
+	}
+
+	.nav-links a {
+		padding: .8rem 0;
+	}
+
+	.reserve-button {
+		text-align: center;
+	}
+
+	.hero {
+		padding: 5rem 1.25rem;
+	}
+
+	.section {
+		padding: 3.5rem 1.25rem;
+	}
+
+	.section-heading,
+	.story-layout,
+	.reserve-layout {
+		display: block;
+	}
+
+	.section-heading p {
+		margin-top: 1rem;
+	}
+
+	.menu-grid,
+	.info-grid,
+	.review-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.story-copy,
+	.reserve-box {
+		margin-top: 1.5rem;
+	}
+}
