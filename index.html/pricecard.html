@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="css/price.css">
+</head>
+
+<body>
+    <section class="pricing-section">
+        <div class="pricing-header">
+            <p class="eyebrow">PRICING</p>
+            <h1>Choose the plan that fits you</h1>
+            <p class="pricing-description">
+                Simple and transparent pricing. Choose monthly or yearly billing.
+            </p>
+        </div>
+        <div class="billing-toggle">
+            <button class="billing-btn active" id="monthlyBtn" type="button">
+                Monthly
+            </button>
+            <button class="billing-btn" id="yearlyBtn" type="button">
+                Yearly
+                <span class="save-badge">Save 20%</span>
+            </button>
+        </div>
+        <div class="pricing-cards">
+            <article class="pricing-card">
+                <div class="card-top">
+                    <h2>Free</h2>
+                    <p class="card-description">
+                        Start with the basics and explore the platform.
+                    </p>
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="0" data-yearly="0">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <button class="plan-button secondary">
+                    Choose Your Plan
+                </button>
+                <div class="features">
+                    <h3>What's included</h3>
+                    <ul>
+                        <li>Unlimited everyday chats</li>
+                        <li>Basic tools</li>
+                        <li>Limited image creation</li>
+                        <li>Limited memory</li>
+                        <li>Limited voice chats</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="pricing-card featured">
+                <div class="popular-label">
+                    MOST POPULAR
+                </div>
+                <div class="card-top">
+                    <h2>Plus</h2>
+                    <p class="card-description">
+                        Advanced tools for more demanding work.
+                    </p>
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="20" data-yearly="16">20</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="billed-text">
+                        Billed monthly
+                    </p>
+                </div>
+                <button class="plan-button primary">
+                    Choose Your Plan
+                </button>
+                <div class="features">
+                    <h3>Everything in Free, plus:</h3>
+                    <ul>
+                        <li>Advanced intelligence</li>
+                        <li>Higher quality image creation</li>
+                        <li>More messages with tools</li>
+                        <li>Expanded memory</li>
+                        <li>More voice chats</li>
+                        <li>Larger projects</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="pricing-card">
+                <div class="card-top">
+                    <h2>Business</h2>
+                    <p class="card-description">
+                        More power and collaboration for professional teams.
+                    </p>
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="49" data-yearly="39">49</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="billed-text">
+                        Billed monthly
+                    </p>
+                </div>
+                <button class="plan-button secondary">
+                    Choose Your Plan
+                </button>
+                <div class="features">
+                    <h3>Everything in Plus, plus:</h3>
+                    <ul>
+                        <li>Team collaboration</li>
+                        <li>Advanced workspace</li>
+                        <li>Higher usage limits</li>
+                        <li>Business tools</li>
+                        <li>Team administration</li>
+                        <li>Priority support</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <script src="js/price.js"></script>
+</body>
+</html>
